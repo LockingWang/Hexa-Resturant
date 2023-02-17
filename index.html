@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <link rel="stylesheet" href="css/headpage.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://kit.fontawesome.com/847854956a.js" crossorigin="anonymous"></script>
     <script src="js/headpage.js"></script>
 </head>
@@ -26,12 +27,18 @@
         <header>
             <div class="guide">
                 <a class="logo" href="index.html">六角西餐廳</a>
-                <ul class="navbar">
-                    <li><a href="#">特色</a></li>
-                    <li><a href="#">主廚</a></li>
-                    <li><a href="#">地圖</a></li>
-                </ul>
-                <a class="mobile-menuBTN" href="#">漢堡選單</a>
+                <div class="menu">
+                    <div class="mobile-menuBTN">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <ul class="navbar">
+                        <li><a href="#firstPart">特色</a></li>
+                        <li><a href="#secondPart">主廚</a></li>
+                        <li><a href="#fourthPart">地圖</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="banner">
                 <h1>咬一口就無法忘懷的漢堡</h1>
@@ -44,7 +51,7 @@
             </div>
         </header>
         <div class="content">
-            <div class="firstPart">
+            <div class="firstPart" id="firstPart">
                 <div class="headWord">
                     <div class="baseLine"></div>
                     <div class="words-between">
@@ -76,17 +83,17 @@
                     </li>
                 </ul>
             </div>
-            <div class="secondPart">
+            <div class="secondPart" id="secondPart">
                 <img src="images/main_chef_brown.png" alt="main_chef picture">
                 <div class="text">
                     <h2>今日主廚：帕金森、梅在帕</h2>
                     <p>Tody Chef: Plum in Shock</p>
-                    <p>
+                    <p class="chef_story">
                         Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.
                     </p>
                 </div>
             </div>
-            <div class="thirdPart">
+            <div class="thirdPart" id="thirdPart">
                 <h2>聽聽別人的感想</h2>
                 <ul class="comments">
                     <li>
@@ -121,7 +128,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="fourthPart">
+            <div class="fourthPart" id="fourthPart">
                 <h2>我們的位置不太夠坐<br/>要不要先訂位呢？</h2>
                 <div class="booking">
                     <img src="images/Map.png" alt="map">
@@ -160,12 +167,12 @@
                 <li>
                     <h2>聯絡方式</h2>
                     <ul class="contact">
-                        <li>高雄市中正五路到底</li>
-                        <li>+886 886 886</li>
-                        <li>service@hexschool.com</li>
+                        <li><a href="https://goo.gl/maps/7c1dCBG2zxZmEo6p9">高雄市中正五路到底</a></li>
+                        <li><a href="tel:+886 886 886">+886 886 886</a></li>
+                        <li><a href="mailto:service@hexschool.com">service@hexschool.com</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="links">
                     <img src="images/logo_l(null).svg" alt="logo">
                     <div class="social_group">
                         <a href="#"><i class="fa-brands fa-square-google-plus google-plus"></i></a>
