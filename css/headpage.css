@@ -68,7 +68,7 @@ a {
 }
 
 header {
-    background-image: url(/images/header_desktop.png);
+    background-image: url(../images/header_desktop.png);
     background-position: center;
     background-repeat: no-repeat;
     padding-bottom: 2%;
@@ -82,7 +82,7 @@ header .guide {
 }
 
 header .guide .logo {
-    background-image: url(/images/logo_w@svg.svg);
+    background-image: url(../images/logo_w@svg.svg);
     background-repeat: no-repeat;
     width: 120px;
     text-indent: -101%;
@@ -197,7 +197,7 @@ header .banner .item p {
 
 @media (max-width:480px){
     header {
-        background-image: url(/images/header_mobile.png);
+        background-image: url(../images/header_mobile.png);
         padding-bottom: 10%;
     }
 }
