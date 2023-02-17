@@ -54,6 +54,241 @@ table {
 img {
     max-width:100%; 
     height: auto;
-} 
+}
+
+a {
+    text-decoration: none;
+}
 
 /* CSS Reset End */
+
+.wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(/images/header_desktop.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 2%;
+    background-color: black;
+}
+
+header .guide {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .guide .logo {
+    background-image: url(/images/logo_w@svg.svg);
+    background-repeat: no-repeat;
+    width: 120px;
+    text-indent: -101%;
+    overflow: hidden;
+    margin: 15px 0 0 13px;
+}
+
+header .guide .navbar {
+    display: flex;
+}
+
+header .guide .navbar li {
+    width: 100px;
+}
+
+header .guide .navbar li a {
+    display: block;
+    padding: 18px 0;
+    color: #fff;
+    text-align: center;
+}
+
+header .guide .mobile-menuBTN {
+    display: none;
+}
+
+header .banner {
+    width: 460px;
+    margin: 10% auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.21);
+    color: #fff;
+    padding: 20px 0;
+    line-height: 1.5;
+}
+
+header .banner h1 {
+    font-size: 2.25em;
+}
+
+header .banner .item {
+    display: flex;
+    justify-content: center;
+    line-height: 1em;
+}
+
+header .banner .item p {
+    margin: 0 5px;
+}
+
+.content .firstPart {
+    background-color: #EFE9E7;
+    padding: 0 20px 50px 20px;
+    color: #3D1101;
+}
+
+.content .firstPart .headWord {
+    width: 460px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.content .firstPart .headWord .baseLine {
+    width: 120px;
+    height: 30px;
+    border-bottom: 1px solid #979797;
+}
+
+.content .firstPart .headWord .words-between {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.content .firstPart .keys {
+    display:flex;
+    justify-content: space-around;
+}
+
+.content .firstPart .keys li {
+    width: 26%;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.content .firstPart .keys li img {
+    clip-path: circle(50% at 50% 50%);
+}
+
+.content .firstPart .keys li h2 {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.content .firstPart .keys li p{
+    text-align:left;
+}
+
+.content .secondPart {
+    background-color: #3D1101;
+    display: flex;
+    justify-content: center;
+}
+
+.content .secondPart img {
+    width: 46%;
+}
+
+.content .secondPart .text {
+    width: 40%;
+    color: #EFE9E7;
+    line-height: 1.3;
+    margin-left: 25px;
+    padding-top: 81px;
+}
+
+.content .secondPart .text h2 {
+    font-size: 20px;
+}
+
+.content .secondPart .text p {
+    margin-bottom: 16px;
+}
+
+.content .thirdPart {
+    background-color: #EFE9E7;
+    color: #3D1101;
+    padding: 50px 20px 34px 20px;
+}
+
+.content .thirdPart h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.content .thirdPart .comments {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content .thirdPart .comments li {
+    width: 30%;
+    display: flex;
+}
+
+.content .thirdPart .comments li img {
+    width: 67px;
+    height: 67px;
+    clip-path: circle(50% at 50% 50%);
+    margin-right: 13px;
+}
+
+.content .thirdPart .comments li .commentText h3 {
+    font-size: 18px;
+    margin: 22px 0;
+}
+
+.content .thirdPart .comments li .commentText p {
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.content .thirdPart .comments li .commentText .occupation {
+    text-align: right;
+}
+
+.content .fourthPart {
+    background: rgba(250,250,250,0.70);
+    color: #3D1101;
+    padding: 50px 0;
+}
+
+.content .fourthPart h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.content .fourthPart .booking {
+    display: flex;
+    justify-content: center;
+}
+
+.content .fourthPart .booking form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.content .fourthPart .booking form input {
+    width: 100%;
+    margin: 10px 0 15px 0;
+}
+
+.content .fourthPart .booking form .choice {
+    display: inline-block;
+    margin-right: 36px;
+}
+
+.content .fourthPart .booking form .has-vegetarian {
+    width: auto;
+    
+}
