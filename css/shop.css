@@ -457,10 +457,15 @@ header .banner .item p {
     position: absolute;
     top:9px;
     left:9px;
-    width: 23px;
-    height: 20px;
     cursor: pointer;
     z-index: 2;
+    font-size: 26px;
+}
+
+.content .shop .items li .red_heart {
+    color: red;
+    font-weight: 800;
+    transition: all 0.5s;
 }
 
     /*促銷裝飾*/
@@ -508,6 +513,9 @@ header .banner .item p {
         height: 40px;
         line-height: 40px;
         padding: 0;
+    }
+    .content .shop .items li .heart {
+        font-size: 44px;
     }
 }
 @media (max-width:414px) {

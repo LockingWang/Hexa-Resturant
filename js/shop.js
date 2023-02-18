@@ -4,4 +4,8 @@ $(document).ready(function () {
         $(this).toggleClass('change');
         $('.navbar').toggleClass('show');
     });
+    $('.heart').click(function (e) { 
+        e.preventDefault();
+        $(this).toggleClass('red_heart');
+    });
 });
