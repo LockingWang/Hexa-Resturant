@@ -1,0 +1,408 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%; 
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CSS Reset End */
+
+.wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(../images/header_desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 2%;
+    background-color: black;
+}
+
+header .guide {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .guide .logo {
+    background-image: url(../images/logo_w@svg.svg);
+    background-repeat: no-repeat;
+    width: 120px;
+    text-indent: -101%;
+    overflow: hidden;
+    margin: 15px 0 0 13px;
+}
+
+header .guide .menu .navbar {
+    display: flex;
+}
+
+header .guide .menu .navbar li {
+    width: 100px;
+}
+
+header .guide .menu .navbar li a {
+    display: block;
+    padding: 18px 0;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+header .guide .menu .navbar li a:hover {
+    background: #41ace175;
+}
+
+header .guide .menu .mobile-menuBTN {
+    display: none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 15px;
+    
+}
+
+header .guide .menu .mobile-menuBTN .bar1, 
+header .guide .menu .mobile-menuBTN .bar2, 
+header .guide .menu .mobile-menuBTN .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+header .guide .menu .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+header .guide .menu .change .bar2 {
+    opacity: 0;
+}
+  
+header .guide .menu .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+header .banner {
+    max-width: 460px;
+    margin: 10% auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    padding: 20px 0;
+    line-height: 1.5;
+}
+
+header .banner h1 {
+    font-size: 2.25em;
+}
+
+header .banner .item {
+    display: flex;
+    justify-content: center;
+    line-height: 1em;
+}
+
+header .banner .item p {
+    margin: 0 5px;
+}
+
+@media (max-width:767px){
+    
+    header .guide .menu .navbar {
+        display: block;
+        position: absolute;
+        right: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition:all 0.5s;
+    }
+
+    header .guide .menu .show {
+        max-height: 280px;
+    }
+
+
+    
+    header .guide .menu .mobile-menuBTN {
+        display: inline-block;
+    }
+    
+    header .guide .menu .navbar li {
+        width: 200px;
+    }
+    
+    header .guide .menu .navbar li a {
+        background: black;
+        border: 2px solid #41ace1;
+    }
+}
+
+@media (max-width:480px){
+    header {
+        background-image: url(../images/header_mobile.png);
+        padding-bottom: 10%;
+    }
+}
+
+/* Content Start */
+
+.content {
+    background-color: #EFE9E7;
+    color: #3D1101;
+    padding: 50px 0;
+}
+
+.content .logo {
+    max-width: 240px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.content h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.content .regist_block {
+    max-width: 620px;
+    margin: 35px auto 0 auto;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    border-top: 3px solid #FF5E45;
+    padding: 15px;
+}
+
+.content .regist_block h2 {
+    font-size: 18px;
+    padding-bottom: 16px;
+    font-weight: bold;
+}
+
+.content .regist_block .inner_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .regist_block .inner_box .law {
+    width: 48%;
+    font-size: 18px;
+}
+
+.content .regist_block .inner_box .regist_info {
+    width: 48%;
+}
+
+.content .regist_block .inner_box .regist_info label {
+    display: block;
+    text-align: left;
+    position: relative;
+}
+
+.content .regist_block .inner_box .regist_info label.password_block {
+    margin-top: 15px;
+}
+
+.content .regist_block .inner_box .regist_info i {
+    display: block;
+    position: absolute;
+    color:#3d11017c;
+    top: 25px;
+    left: 10px;
+}
+
+.content .regist_block .inner_box .regist_info .password_check i {
+    display: block;
+    position: absolute;
+    color:#3d11017c;
+    top: 10px;
+    left: 10px;
+}
+
+.content .regist_block .inner_box .regist_info input {
+    width: 100%;
+    height: 32px;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+    margin-top: 3px;
+    padding-left: 30px;
+}
+
+.content .regist_block .inner_box .regist_info .ready_has {
+    font-size: 14px;
+    color: #FF5E45;
+    display: block;
+    padding-top: 5px;
+}
+
+.content .regist_block .inner_box .regist_info .ready_has:hover {
+    color:blue;
+}
+
+.content .regist_block .inner_box .regist_info .regist_btn {
+    width: 125px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 3px;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+    background: #F56C23;
+    display: block;
+    margin: 30px 0 0 auto;
+}
+
+.content .regist_block .inner_box .regist_info .regist_btn:hover {
+    width: 130px;
+    height: 35px;
+    font-size: 16px;
+}
+
+
+
+/* Content End */
+
+footer {
+    background-color: #EFE9E7;
+    color: #3D1101;
+    padding: 50px 42px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul li {
+    width: 30%;
+    line-height: 1.3;
+}
+
+footer ul li h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer ul li .contact {
+    display: block;
+    padding-left: 20px;
+}
+
+footer ul li .contact li {
+    width: auto;
+    list-style: disc;
+}
+
+footer ul li .contact li a {
+    color:#3D1101;
+}
+
+footer ul li .contact li a:hover {
+    color:red;
+}
+
+footer ul .links {
+    text-align:end;
+}
+
+footer ul li .social_group {
+    text-align: right;
+    padding-top: 15px;
+}
+
+footer ul li a i {
+    font-size: 36px;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+footer ul li a i:hover {
+    font-size: 48px;
+}
+
+footer ul li .google-plus {
+    color: #DB4437;
+}
+
+footer ul li .twitter {
+    color: #41ABE1;
+}
+
+footer ul li .facebook {
+    color: #3A5795;
+}
+
+@media (max-width:767px){
+    
+    footer {
+        padding: 50px 10px;
+    }
+    footer ul {
+        display: block;
+    }
+    footer ul li {
+        width: 100%;
+        margin: 0 auto 30px auto;
+    }
+    footer ul li .contact li {
+        margin: 0;
+    }
+}
