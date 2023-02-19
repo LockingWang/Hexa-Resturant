@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>線上訂購美食 - 六角西餐廳 HexaResturant</title>
+    <title>會員登入 - 六角西餐廳 HexaResturant</title>
 
-    <link rel="apple-tough-icon" href="images/shopping cart.svg.svg" />
-    <link rel="shortcut icon" href="images/shopping cart.svg.svg" />
+    <link rel="apple-tough-icon" href="images/membership.svg" />
+    <link rel="shortcut icon" href="images/membership.svg" />
     <meta name="description" content="RWD練習網頁" />
 
-    <meta property="og:title" content="線上訂購美食 - 六角西餐廳 HexaResturant" />
+    <meta property="og:title" content="會員登入 - 六角西餐廳 HexaResturant" />
     <meta property="og:description" content="RWD練習網頁">
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="shop.html" />
-    <meta property="og:image" content="images/shopping cart.svg.svg" />
+    <meta property="og:url" content="login.html" />
+    <meta property="og:image" content="images/membership.svg" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/login.css">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="https://kit.fontawesome.com/847854956a.js" crossorigin="anonymous"></script>
-    <script src="js/shop.js"></script>
+    <script src="js/login.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -53,7 +54,26 @@
             </div>
         </header>
         <div class="content">
-            
+            <img class="logo" src="images/logo_l@svg.svg" alt="logo">
+            <h2>享受美食好味道</h3>
+            <div class="loginBox">
+                <h2>LOGIN</h2>
+                <label>
+                    Email Address*
+                    <i class="fa-regular fa-envelope"></i>
+                    <input class="email" type="email">
+                </label>
+                <label class="password_block">
+                    Password*
+                    <i class="fa-solid fa-lock"></i>
+                    <input class="password" type="password">
+                </label>
+                <a class="forget" href="#">忘記密碼？</a>
+                <div class="btn_group">
+                    <button class="regist_btn">註冊</button>
+                    <button class="login_btn">登入</button>
+                </div>
+            </div>
         </div>
         <footer>
             <ul>
