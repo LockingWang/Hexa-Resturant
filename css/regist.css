@@ -316,7 +316,21 @@ header .banner .item p {
     font-size: 16px;
 }
 
-
+@media (max-width:767px) {
+    .content .regist_block {
+        max-width: 95%;
+    }
+    .content .regist_block .inner_box {
+        display: block;
+    }
+    .content .regist_block .inner_box .law {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .content .regist_block .inner_box .regist_info {
+        width: 100%;
+    }
+}
 
 /* Content End */
 
