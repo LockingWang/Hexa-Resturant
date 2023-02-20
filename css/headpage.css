@@ -202,13 +202,16 @@ header .banner .item p {
     }
 }
 
-.content .firstPart {
+/* Content Start */
+
+/* Head Content Start */
+.head_content .firstPart {
     background-color: #EFE9E7;
     padding: 0 20px 50px 20px;
     color: #3D1101;
 }
 
-.content .firstPart .headWord {
+.head_content .firstPart .headWord {
     max-width: 460px;
     margin: 0 auto;
     display: flex;
@@ -217,75 +220,75 @@ header .banner .item p {
     padding-bottom: 30px;
 }
 
-.content .firstPart .headWord .baseLine {
+.head_content .firstPart .headWord .baseLine {
     width: 120px;
     height: 30px;
     border-bottom: 1px solid #979797;
 }
 
-.content .firstPart .headWord .words-between {
+.head_content .firstPart .headWord .words-between {
     text-align: center;
     font-size: 20px;
     line-height: 1.5;
 }
 
-.content .firstPart .keys {
+.head_content .firstPart .keys {
     display:flex;
     justify-content: space-around;
 }
 
-.content .firstPart .keys li {
+.head_content .firstPart .keys li {
     width: 26%;
     text-align: center;
     line-height: 1.3;
 }
 
-.content .firstPart .keys li img {
+.head_content .firstPart .keys li img {
     clip-path: circle(50% at 50% 50%);
 }
 
-.content .firstPart .keys li h2 {
+.head_content .firstPart .keys li h2 {
     font-size: 18px;
     padding: 10px 0;
 }
 
-.content .firstPart .keys li p{
+.head_content .firstPart .keys li p{
     text-align:left;
 }
 
 @media (max-width:767px){
-    .content .firstPart {
+    .head_content .firstPart {
         padding: 0 0 50px 0;
     }
-    .content .firstPart .keys {
+    .head_content .firstPart .keys {
         display:block;
     }
-    .content .firstPart .keys li {
+    .head_content .firstPart .keys li {
         width: 80%;
         text-align: center;
         line-height: 1.3;
         display: block;
         margin: 0 auto 20px auto;
     }
-    .content .firstPart .headWord .baseLine {
+    .head_content .firstPart .headWord .baseLine {
         display: none;
     }
-    .content .firstPart .headWord .words-between {
+    .head_content .firstPart .headWord .words-between {
         margin: 0 auto;
     }
 }
 
-.content .secondPart {
+.head_content .secondPart {
     background-color: #3D1101;
     display: flex;
     justify-content: center;
 }
 
-.content .secondPart img {
+.head_content .secondPart img {
     width: 46%;
 }
 
-.content .secondPart .text {
+.head_content .secondPart .text {
     width: 40%;
     color: #EFE9E7;
     line-height: 1.3;
@@ -293,109 +296,109 @@ header .banner .item p {
     padding-top: 81px;
 }
 
-.content .secondPart .text h2 {
+.head_content .secondPart .text h2 {
     font-size: 20px;
 }
 
-.content .secondPart .text p {
+.head_content .secondPart .text p {
     margin-bottom: 16px;
 }
 
 @media (max-width:767px){
-    .content .secondPart {
+    .head_content .secondPart {
         display: block;
         text-align: center;
     }
-    .content .secondPart img {
+    .head_content .secondPart img {
         width: 100%;
     }
-    .content .secondPart .text {
+    .head_content .secondPart .text {
         width: 100%;
         margin: 0;
         padding: 0 30px 30px 30px;
         padding-top: 20px;
     }
-    .content .secondPart .text .chef_story {
+    .head_content .secondPart .text .chef_story {
         text-align: left;
     }
 }
 
-.content .thirdPart {
+.head_content .thirdPart {
     background-color: #EFE9E7;
     color: #3D1101;
     padding: 50px 20px 34px 20px;
 }
 
-.content .thirdPart h2 {
+.head_content .thirdPart h2 {
     font-size: 24px;
     text-align: center;
     margin-bottom: 32px;
 }
 
-.content .thirdPart .comments {
+.head_content .thirdPart .comments {
     display: flex;
     justify-content: space-around;
 }
 
-.content .thirdPart .comments li {
+.head_content .thirdPart .comments li {
     width: 30%;
     display: flex;
 }
 
-.content .thirdPart .comments li img {
+.head_content .thirdPart .comments li img {
     width: 67px;
     height: 67px;
     clip-path: circle(50% at 50% 50%);
     margin-right: 13px;
 }
 
-.content .thirdPart .comments li .commentText h3 {
+.head_content .thirdPart .comments li .commentText h3 {
     font-size: 18px;
     margin: 22px 0;
 }
 
-.content .thirdPart .comments li .commentText p {
+.head_content .thirdPart .comments li .commentText p {
     line-height: 1.5;
     margin-bottom: 16px;
 }
 
-.content .thirdPart .comments li .commentText .occupation {
+.head_content .thirdPart .comments li .commentText .occupation {
     text-align: right;
 }
 
 @media (max-width:767px){
-    .content .thirdPart .comments {
+    .head_content .thirdPart .comments {
         display: block;
     }
-    .content .thirdPart .comments li {
+    .head_content .thirdPart .comments li {
         width: 90%;
         margin: 0 auto;
     }
 }
 
-.content .fourthPart {
+.head_content .fourthPart {
     background: rgba(250,250,250,0.70);
     color: #3D1101;
     padding: 50px 0;
 }
 
-.content .fourthPart h2 {
+.head_content .fourthPart h2 {
     font-size: 24px;
     text-align: center;
     margin-bottom: 38px;
     line-height: 1.3;
 }
 
-.content .fourthPart .booking {
+.head_content .fourthPart .booking {
     display: flex;
     justify-content: center;
 }
 
-.content .fourthPart .booking img{
+.head_content .fourthPart .booking img{
     max-width: 45%;
 }
 
-.content .fourthPart .booking form {
+.head_content .fourthPart .booking form {
     display: flex;
     flex-direction: column;
     width: 45%;
@@ -403,57 +406,57 @@ header .banner .item p {
     margin-left: 20px;
 }
 
-.content .fourthPart .booking form input {
+.head_content .fourthPart .booking form input {
     width: 100%;
     margin: 10px 0 15px 0;
 }
 
-.content .fourthPart .booking form .choice {
+.head_content .fourthPart .booking form .choice {
     display: inline-block;
     margin-right: 36px;
     font-size: 16px;
 }
 
-.content .fourthPart .booking form .has-vegetarian {
+.head_content .fourthPart .booking form .has-vegetarian {
     width: 16px;
     height: 16px;
     margin: 0 0 0 5px;
 }
 
-.content .fourthPart .booking form .btnGroup {
+.head_content .fourthPart .booking form .btnGroup {
     text-align: right;
 }
 
-.content .fourthPart .booking form button {
+.head_content .fourthPart .booking form button {
     width: 70px;
     height: 32px;
     transition: all 0.5s;
 }
 
-.content .fourthPart .booking form button:hover {
+.head_content .fourthPart .booking form button:hover {
     border-radius: 50%;
 }
 
-.content .fourthPart .booking form .cancel-btn {
+.head_content .fourthPart .booking form .cancel-btn {
     background: rgba(0,0,0,0.35);
     border-radius: 3px;
 }
 
-.content .fourthPart .booking form .submit-btn {
+.head_content .fourthPart .booking form .submit-btn {
     background: #F56C23;
     border-radius: 3px;
 }
 
 @media (max-width:767px){
-    .content .fourthPart .booking {
+    .head_content .fourthPart .booking {
         display: block;
         text-align: center;
     }
-    .content .fourthPart .booking img{
+    .head_content .fourthPart .booking img{
         max-width: 90%;
         margin-bottom: 20px;
     }
-    .content .fourthPart .booking form {
+    .head_content .fourthPart .booking form {
         width: 90%;
         font-size: 14px;
         margin-left: 20px;
@@ -462,10 +465,575 @@ header .banner .item p {
 }
 
 @media (max-width:480px){
-    .content .fourthPart .booking form .submit-btn {
+    .head_content .fourthPart .booking form .submit-btn {
         margin: 0;
     }
 }
+
+/* Head Content End */
+
+/* Shop Content Start */
+
+.shop_content {
+    display:flex;
+    padding: 50px 40px 0 40px;
+    background-color: #EFE9E7;
+    color: #3D1101;
+}
+
+@media (max-width:768px) {
+    .shop_content {
+        display:block;
+        padding: 50px 40px 0 40px;
+        background-color: #EFE9E7;
+        color: #3D1101;
+    }
+}
+
+.shop_content .sidebar {
+    min-width: 220px;
+}
+
+.shop_content .sidebar h1 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.shop_content .sidebar h1 i {
+    font-size: 32px;
+    padding-right: 15px;
+}
+
+.shop_content .sidebar ul li {
+    border-bottom: 1px solid #3D1101;
+}
+
+.shop_content .sidebar ul li a {
+    color: #3D1101;
+    display:block;
+    padding: 8px;
+}
+
+.shop_content .sidebar ul li a:hover {
+    color: #fff;
+    background-color: #3D1101;
+}
+
+@media (max-width:768px) {
+    .shop_content .sidebar {
+        text-align: center;
+    }
+    .shop_content .sidebar ul li a {
+        padding: 14px;
+    }
+
+}
+
+.shop_content .shop {
+    max-width: 700px;
+    margin-left: 20px;
+}
+
+.shop_content .shop .functions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.shop_content .shop .functions .search {
+    width: 65%;
+    height: 32px;
+    border-collapse: collapse;
+    display: flex;
+}
+
+
+.shop_content .shop .functions .search input {
+    border: 2px solid #3D1101;
+    width: 90%;
+    height: 31px;
+    background-color: #EFE9E7;
+}
+
+.shop_content .shop .functions .search input:focus{
+    outline: 2px solid #41ace174;
+}
+
+.shop_content .shop .functions .search i {
+    background-color: #3D1101;
+    color: #fff;
+    width: 36px;
+    height: 31px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.shop_content .shop .functions .search i:hover{
+    font-size: larger;
+}
+
+.shop_content .shop .functions .shop_cart {
+    display: flex;
+}
+
+.shop_content .shop .functions .shop_cart a {
+    color: #3D1101;
+    border-right: 1px solid #3D1101;
+    padding-right: 12px;
+    height: 16px;
+    margin-top: 8px;
+}
+
+.shop_content .shop .functions .shop_cart a:hover {
+    color:red;
+    font-weight: bold;
+}
+
+.shop_content .shop .functions .shop_cart .cart {
+    position: relative;
+    margin-left: 17px;
+}
+
+.shop_content .shop .functions .shop_cart .cart i {
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.shop_content .shop .functions .shop_cart .cart i:hover {
+    color: #41ace1;
+    transform: rotate(0.125turn);
+}
+
+.shop_content .shop .functions .shop_cart .cart .number {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FF5E45;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+@media (max-width:768px) {
+    .shop_content .shop {
+        max-width: 100%;
+        margin-left: 0;
+        padding-top: 20px;
+    }
+    .shop_content .shop .functions {
+        display: block;
+    }
+    .shop_content .shop .functions .search {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+    .shop_content .shop .functions .search input {
+        border: 2px solid #3D1101;
+        width: 100%;
+        height: 44px;
+        background-color: #EFE9E7;
+        font-size: 32px;
+    }
+    .shop_content .shop .functions .search i {
+        background-color: #3D1101;
+        color: #fff;
+        width: 36px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .shop_content .shop .functions .shop_cart {
+        justify-content: flex-end;
+        padding-top: 15px;
+    }
+    .shop_content .shop .functions .shop_cart a {
+        font-size: 20px;
+        height: 20px;
+    }
+}
+
+.shop_content .shop .items {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.shop_content .shop .items li {
+    width: 31%;
+    text-align: center;
+    line-height: 1.5;
+    position: relative;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    margin-bottom: 30px;
+    margin-right: 2%;
+    padding-bottom: 10px;
+
+}
+
+.shop_content .shop .items li img{
+    width: 100%;
+    height: 43%;
+    position: relative;
+    z-index: 1;
+}
+
+.shop_content .shop .items li h2 {
+    font-size: 20px;
+}
+
+.shop_content .shop .items li p {
+    font-size: 12px;
+}
+
+.shop_content .shop .items li .baseLine {
+    width: 41%;
+    height: 1px;
+    background-color: #3D1101;
+    margin: 10px auto;
+}
+
+.shop_content .shop .items li .price {
+    font-size: 20px;
+    padding: 16px 0 10px 0;
+}
+
+.shop_content .shop .items li .add_btn {
+    color:#FF5E45;
+    border: 2px solid #FF5E45;
+    border-radius: 3px;
+    display: block;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    padding: 3px 0;
+    transition: all 0.5s;
+}
+
+.shop_content .shop .items li .add_btn i {
+    padding-right: 10px;
+}
+
+.shop_content .shop .items li .add_btn:hover {
+    color: #EFE9E7;
+    background-color: #FF5E45;
+}
+
+.shop_content .shop .items li .heart {
+    color: #fff;
+    position: absolute;
+    top:9px;
+    left:9px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 26px;
+}
+
+.shop_content .shop .items li .red_heart {
+    color: red;
+    font-weight: 800;
+    transition: all 0.5s;
+}
+
+    /*促銷裝飾*/
+
+.shop_content .shop .items li .pro_text {
+    font-size: 16px;
+    background-color: #00CC99;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    padding: 5px 10px;
+    clip-path: polygon(25% 0, 75% 0, 100% 100%, 0% 100%);
+    transform: rotate(0.125turn);
+    position: absolute;
+    top: 10px;
+    right: -35px;
+    z-index: 2;
+}
+
+.shop_content .shop .items li .decoration {
+    background-color: #008563;
+    width: 120px;
+    height: 10px;
+    transform: rotate(0.125turn);
+    position: absolute;
+    top: 34px;
+    right: -21px;
+}
+@media (max-width:950px) {
+    .shop_content .shop .items li {
+        line-height: 1.0;
+    }
+    .shop_content .shop .items li h2 {
+        padding-top: 10px;
+    }
+}
+@media (max-width:768px) {
+    .shop_content .shop .items li {
+        width: 48%;
+        margin-right: 2%;
+    
+    }
+    .shop_content .shop .items li .add_btn {
+        height: 40px;
+        line-height: 40px;
+        padding: 0;
+    }
+    .shop_content .shop .items li .heart {
+        font-size: 44px;
+    }
+}
+@media (max-width:414px) {
+    .shop_content .shop .items li {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 0;
+    }
+}
+
+/* Shop Content End */
+
+/* Login Content Start */
+
+.login_content {
+    background-color: #EFE9E7;
+    color: #3D1101;
+    padding: 50px 0;
+}
+
+.login_content .logo {
+    max-width: 240px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.login_content h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.login_content .loginBox {
+    width: 300px;
+    margin: 35px auto 0 auto;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    border-top: 3px solid #FF5E45;
+    padding: 15px;
+}
+
+.login_content .loginBox h2 {
+    font-size: 18px;
+    padding-bottom: 16px;
+    font-weight: bold;
+}
+
+.login_content .loginBox label {
+    display: block;
+    text-align: left;
+    position: relative;
+}
+
+.login_content .loginBox label.password_block {
+    margin-top: 15px;
+}
+
+.login_content .loginBox i {
+    display: block;
+    position: absolute;
+    color:#3d11017c;
+    top: 25px;
+    left: 10px;
+}
+
+.login_content .loginBox input {
+    width: 100%;
+    height: 32px;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+    margin-top: 3px;
+    padding-left: 30px;
+}
+
+.login_content .loginBox .forget {
+    font-size: 14px;
+    color: #FF5E45;
+}
+
+.login_content .loginBox .forget:hover {
+    color:blue;
+}
+
+.login_content .loginBox .btn_group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.login_content .loginBox .btn_group button {
+    width: 125px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 3px;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+
+.login_content .loginBox .btn_group button:hover {
+    width: 130px;
+    height: 35px;
+    font-size: 16px;
+}
+
+.login_content .loginBox .btn_group .regist_btn {
+    background: rgba(0,0,0,0.35);
+}
+
+.login_content .loginBox .btn_group .login_btn {
+    background: #F56C23;
+}
+
+/* Login Content End */
+
+/* Regist Content Start */
+
+.regist_content {
+    background-color: #EFE9E7;
+    color: #3D1101;
+    padding: 50px 0;
+}
+
+.regist_content .logo {
+    max-width: 240px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.regist_content h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.regist_content .regist_block {
+    max-width: 620px;
+    margin: 35px auto 0 auto;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    border-top: 3px solid #FF5E45;
+    padding: 15px;
+}
+
+.regist_content .regist_block h2 {
+    font-size: 18px;
+    padding-bottom: 16px;
+    font-weight: bold;
+}
+
+.regist_content .regist_block .inner_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.regist_content .regist_block .inner_box .law {
+    width: 48%;
+    font-size: 18px;
+}
+
+.regist_content .regist_block .inner_box .regist_info {
+    width: 48%;
+}
+
+.regist_content .regist_block .inner_box .regist_info label {
+    display: block;
+    text-align: left;
+    position: relative;
+}
+
+.regist_content .regist_block .inner_box .regist_info label.password_block {
+    margin-top: 15px;
+}
+
+.regist_content .regist_block .inner_box .regist_info i {
+    display: block;
+    position: absolute;
+    color:#3d11017c;
+    top: 25px;
+    left: 10px;
+}
+
+.regist_content .regist_block .inner_box .regist_info .password_check i {
+    display: block;
+    position: absolute;
+    color:#3d11017c;
+    top: 10px;
+    left: 10px;
+}
+
+.regist_content .regist_block .inner_box .regist_info input {
+    width: 100%;
+    height: 32px;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+    margin-top: 3px;
+    padding-left: 30px;
+}
+
+.regist_content .regist_block .inner_box .regist_info .ready_has {
+    font-size: 14px;
+    color: #FF5E45;
+    display: block;
+    padding-top: 5px;
+}
+
+.regist_content .regist_block .inner_box .regist_info .ready_has:hover {
+    color:blue;
+}
+
+.regist_content .regist_block .inner_box .regist_info .regist_btn {
+    width: 125px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 3px;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+    background: #F56C23;
+    display: block;
+    margin: 30px 0 0 auto;
+}
+
+.regist_content .regist_block .inner_box .regist_info .regist_btn:hover {
+    width: 130px;
+    height: 35px;
+    font-size: 16px;
+}
+
+@media (max-width:767px) {
+    .regist_content .regist_block {
+        max-width: 95%;
+    }
+    .regist_content .regist_block .inner_box {
+        display: block;
+    }
+    .regist_content .regist_block .inner_box .law {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .regist_content .regist_block .inner_box .regist_info {
+        width: 100%;
+    }
+}
+
+/* Regist Content End */
+
+/* Content End */
 
 footer {
     background-color: #EFE9E7;

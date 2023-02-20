@@ -202,27 +202,27 @@ header .banner .item p {
     }
 }
 
-/* Content Start */
+/* Login Content Start */
 
-.content {
+.login_content {
     background-color: #EFE9E7;
     color: #3D1101;
     padding: 50px 0;
 }
 
-.content .logo {
+.login_content .logo {
     max-width: 240px;
     display: block;
     margin: 0 auto;
     padding-bottom: 5px;
 }
 
-.content h2 {
+.login_content h2 {
     font-size: 20px;
     text-align: center;
 }
 
-.content .loginBox {
+.login_content .loginBox {
     width: 300px;
     margin: 35px auto 0 auto;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
@@ -230,23 +230,23 @@ header .banner .item p {
     padding: 15px;
 }
 
-.content .loginBox h2 {
+.login_content .loginBox h2 {
     font-size: 18px;
     padding-bottom: 16px;
     font-weight: bold;
 }
 
-.content .loginBox label {
+.login_content .loginBox label {
     display: block;
     text-align: left;
     position: relative;
 }
 
-.content .loginBox label.password_block {
+.login_content .loginBox label.password_block {
     margin-top: 15px;
 }
 
-.content .loginBox i {
+.login_content .loginBox i {
     display: block;
     position: absolute;
     color:#3d11017c;
@@ -254,7 +254,7 @@ header .banner .item p {
     left: 10px;
 }
 
-.content .loginBox input {
+.login_content .loginBox input {
     width: 100%;
     height: 32px;
     border: 1px solid #CCCCCC;
@@ -264,22 +264,22 @@ header .banner .item p {
     padding-left: 30px;
 }
 
-.content .loginBox .forget {
+.login_content .loginBox .forget {
     font-size: 14px;
     color: #FF5E45;
 }
 
-.content .loginBox .forget:hover {
+.login_content .loginBox .forget:hover {
     color:blue;
 }
 
-.content .loginBox .btn_group {
+.login_content .loginBox .btn_group {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-.content .loginBox .btn_group button {
+.login_content .loginBox .btn_group button {
     width: 125px;
     height: 32px;
     font-size: 14px;
@@ -289,23 +289,21 @@ header .banner .item p {
     cursor: pointer;
 }
 
-.content .loginBox .btn_group button:hover {
+.login_content .loginBox .btn_group button:hover {
     width: 130px;
     height: 35px;
     font-size: 16px;
 }
 
-.content .loginBox .btn_group .regist_btn {
+.login_content .loginBox .btn_group .regist_btn {
     background: rgba(0,0,0,0.35);
 }
 
-.content .loginBox .btn_group .login_btn {
+.login_content .loginBox .btn_group .login_btn {
     background: #F56C23;
 }
 
-
-
-/* Content End */
+/* Login Content End */
 
 footer {
     background-color: #EFE9E7;

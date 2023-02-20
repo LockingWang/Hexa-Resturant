@@ -202,27 +202,27 @@ header .banner .item p {
     }
 }
 
-/* Content Start */
+/* Regist Content Start */
 
-.content {
+.regist_content {
     background-color: #EFE9E7;
     color: #3D1101;
     padding: 50px 0;
 }
 
-.content .logo {
+.regist_content .logo {
     max-width: 240px;
     display: block;
     margin: 0 auto;
     padding-bottom: 5px;
 }
 
-.content h2 {
+.regist_content h2 {
     font-size: 20px;
     text-align: center;
 }
 
-.content .regist_block {
+.regist_content .regist_block {
     max-width: 620px;
     margin: 35px auto 0 auto;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
@@ -230,37 +230,37 @@ header .banner .item p {
     padding: 15px;
 }
 
-.content .regist_block h2 {
+.regist_content .regist_block h2 {
     font-size: 18px;
     padding-bottom: 16px;
     font-weight: bold;
 }
 
-.content .regist_block .inner_box {
+.regist_content .regist_block .inner_box {
     display: flex;
     justify-content: space-between;
 }
 
-.content .regist_block .inner_box .law {
+.regist_content .regist_block .inner_box .law {
     width: 48%;
     font-size: 18px;
 }
 
-.content .regist_block .inner_box .regist_info {
+.regist_content .regist_block .inner_box .regist_info {
     width: 48%;
 }
 
-.content .regist_block .inner_box .regist_info label {
+.regist_content .regist_block .inner_box .regist_info label {
     display: block;
     text-align: left;
     position: relative;
 }
 
-.content .regist_block .inner_box .regist_info label.password_block {
+.regist_content .regist_block .inner_box .regist_info label.password_block {
     margin-top: 15px;
 }
 
-.content .regist_block .inner_box .regist_info i {
+.regist_content .regist_block .inner_box .regist_info i {
     display: block;
     position: absolute;
     color:#3d11017c;
@@ -268,7 +268,7 @@ header .banner .item p {
     left: 10px;
 }
 
-.content .regist_block .inner_box .regist_info .password_check i {
+.regist_content .regist_block .inner_box .regist_info .password_check i {
     display: block;
     position: absolute;
     color:#3d11017c;
@@ -276,7 +276,7 @@ header .banner .item p {
     left: 10px;
 }
 
-.content .regist_block .inner_box .regist_info input {
+.regist_content .regist_block .inner_box .regist_info input {
     width: 100%;
     height: 32px;
     border: 1px solid #CCCCCC;
@@ -286,18 +286,18 @@ header .banner .item p {
     padding-left: 30px;
 }
 
-.content .regist_block .inner_box .regist_info .ready_has {
+.regist_content .regist_block .inner_box .regist_info .ready_has {
     font-size: 14px;
     color: #FF5E45;
     display: block;
     padding-top: 5px;
 }
 
-.content .regist_block .inner_box .regist_info .ready_has:hover {
+.regist_content .regist_block .inner_box .regist_info .ready_has:hover {
     color:blue;
 }
 
-.content .regist_block .inner_box .regist_info .regist_btn {
+.regist_content .regist_block .inner_box .regist_info .regist_btn {
     width: 125px;
     height: 32px;
     font-size: 14px;
@@ -310,29 +310,29 @@ header .banner .item p {
     margin: 30px 0 0 auto;
 }
 
-.content .regist_block .inner_box .regist_info .regist_btn:hover {
+.regist_content .regist_block .inner_box .regist_info .regist_btn:hover {
     width: 130px;
     height: 35px;
     font-size: 16px;
 }
 
 @media (max-width:767px) {
-    .content .regist_block {
+    .regist_content .regist_block {
         max-width: 95%;
     }
-    .content .regist_block .inner_box {
+    .regist_content .regist_block .inner_box {
         display: block;
     }
-    .content .regist_block .inner_box .law {
+    .regist_content .regist_block .inner_box .law {
         width: 100%;
         padding-bottom: 30px;
     }
-    .content .regist_block .inner_box .regist_info {
+    .regist_content .regist_block .inner_box .regist_info {
         width: 100%;
     }
 }
 
-/* Content End */
+/* Regist Content End */
 
 footer {
     background-color: #EFE9E7;

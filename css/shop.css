@@ -204,7 +204,7 @@ header .banner .item p {
 
 /* Content Start */
 
-.content {
+.shop_content {
     display:flex;
     padding: 50px 40px 0 40px;
     background-color: #EFE9E7;
@@ -212,7 +212,7 @@ header .banner .item p {
 }
 
 @media (max-width:768px) {
-    .content {
+    .shop_content {
         display:block;
         padding: 50px 40px 0 40px;
         background-color: #EFE9E7;
@@ -220,57 +220,57 @@ header .banner .item p {
     }
 }
 
-.content .sidebar {
+.shop_content .sidebar {
     min-width: 220px;
 }
 
-.content .sidebar h1 {
+.shop_content .sidebar h1 {
     font-size: 20px;
     margin-bottom: 16px;
 }
 
-.content .sidebar h1 i {
+.shop_content .sidebar h1 i {
     font-size: 32px;
     padding-right: 15px;
 }
 
-.content .sidebar ul li {
+.shop_content .sidebar ul li {
     border-bottom: 1px solid #3D1101;
 }
 
-.content .sidebar ul li a {
+.shop_content .sidebar ul li a {
     color: #3D1101;
     display:block;
     padding: 8px;
 }
 
-.content .sidebar ul li a:hover {
+.shop_content .sidebar ul li a:hover {
     color: #fff;
     background-color: #3D1101;
 }
 
 @media (max-width:768px) {
-    .content .sidebar {
+    .shop_content .sidebar {
         text-align: center;
     }
-    .content .sidebar ul li a {
+    .shop_content .sidebar ul li a {
         padding: 14px;
     }
 
 }
 
-.content .shop {
+.shop_content .shop {
     max-width: 700px;
     margin-left: 20px;
 }
 
-.content .shop .functions {
+.shop_content .shop .functions {
     display: flex;
     justify-content: space-between;
     margin-bottom: 26px;
 }
 
-.content .shop .functions .search {
+.shop_content .shop .functions .search {
     width: 65%;
     height: 32px;
     border-collapse: collapse;
@@ -278,18 +278,18 @@ header .banner .item p {
 }
 
 
-.content .shop .functions .search input {
+.shop_content .shop .functions .search input {
     border: 2px solid #3D1101;
     width: 90%;
     height: 31px;
     background-color: #EFE9E7;
 }
 
-.content .shop .functions .search input:focus{
+.shop_content .shop .functions .search input:focus{
     outline: 2px solid #41ace174;
 }
 
-.content .shop .functions .search i {
+.shop_content .shop .functions .search i {
     background-color: #3D1101;
     color: #fff;
     width: 36px;
@@ -299,15 +299,15 @@ header .banner .item p {
     cursor: pointer;
 }
 
-.content .shop .functions .search i:hover{
+.shop_content .shop .functions .search i:hover{
     font-size: larger;
 }
 
-.content .shop .functions .shop_cart {
+.shop_content .shop .functions .shop_cart {
     display: flex;
 }
 
-.content .shop .functions .shop_cart a {
+.shop_content .shop .functions .shop_cart a {
     color: #3D1101;
     border-right: 1px solid #3D1101;
     padding-right: 12px;
@@ -315,28 +315,28 @@ header .banner .item p {
     margin-top: 8px;
 }
 
-.content .shop .functions .shop_cart a:hover {
+.shop_content .shop .functions .shop_cart a:hover {
     color:red;
     font-weight: bold;
 }
 
-.content .shop .functions .shop_cart .cart {
+.shop_content .shop .functions .shop_cart .cart {
     position: relative;
     margin-left: 17px;
 }
 
-.content .shop .functions .shop_cart .cart i {
+.shop_content .shop .functions .shop_cart .cart i {
     font-size: 28px;
     cursor: pointer;
     transition: all 0.3s;
 }
 
-.content .shop .functions .shop_cart .cart i:hover {
+.shop_content .shop .functions .shop_cart .cart i:hover {
     color: #41ace1;
     transform: rotate(0.125turn);
 }
 
-.content .shop .functions .shop_cart .cart .number {
+.shop_content .shop .functions .shop_cart .cart .number {
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -349,27 +349,27 @@ header .banner .item p {
 }
 
 @media (max-width:768px) {
-    .content .shop {
+    .shop_content .shop {
         max-width: 100%;
         margin-left: 0;
         padding-top: 20px;
     }
-    .content .shop .functions {
+    .shop_content .shop .functions {
         display: block;
     }
-    .content .shop .functions .search {
+    .shop_content .shop .functions .search {
         margin: 0 auto;
         width: 100%;
         height: auto;
     }
-    .content .shop .functions .search input {
+    .shop_content .shop .functions .search input {
         border: 2px solid #3D1101;
         width: 100%;
         height: 44px;
         background-color: #EFE9E7;
         font-size: 32px;
     }
-    .content .shop .functions .search i {
+    .shop_content .shop .functions .search i {
         background-color: #3D1101;
         color: #fff;
         width: 36px;
@@ -378,22 +378,22 @@ header .banner .item p {
         text-align: center;
         cursor: pointer;
     }
-    .content .shop .functions .shop_cart {
+    .shop_content .shop .functions .shop_cart {
         justify-content: flex-end;
         padding-top: 15px;
     }
-    .content .shop .functions .shop_cart a {
+    .shop_content .shop .functions .shop_cart a {
         font-size: 20px;
         height: 20px;
     }
 }
 
-.content .shop .items {
+.shop_content .shop .items {
     display:flex;
     flex-wrap: wrap;
 }
 
-.content .shop .items li {
+.shop_content .shop .items li {
     width: 31%;
     text-align: center;
     line-height: 1.5;
@@ -405,34 +405,34 @@ header .banner .item p {
 
 }
 
-.content .shop .items li img{
+.shop_content .shop .items li img{
     width: 100%;
     height: 43%;
     position: relative;
     z-index: 1;
 }
 
-.content .shop .items li h2 {
+.shop_content .shop .items li h2 {
     font-size: 20px;
 }
 
-.content .shop .items li p {
+.shop_content .shop .items li p {
     font-size: 12px;
 }
 
-.content .shop .items li .baseLine {
+.shop_content .shop .items li .baseLine {
     width: 41%;
     height: 1px;
     background-color: #3D1101;
     margin: 10px auto;
 }
 
-.content .shop .items li .price {
+.shop_content .shop .items li .price {
     font-size: 20px;
     padding: 16px 0 10px 0;
 }
 
-.content .shop .items li .add_btn {
+.shop_content .shop .items li .add_btn {
     color:#FF5E45;
     border: 2px solid #FF5E45;
     border-radius: 3px;
@@ -443,16 +443,16 @@ header .banner .item p {
     transition: all 0.5s;
 }
 
-.content .shop .items li .add_btn i {
+.shop_content .shop .items li .add_btn i {
     padding-right: 10px;
 }
 
-.content .shop .items li .add_btn:hover {
+.shop_content .shop .items li .add_btn:hover {
     color: #EFE9E7;
     background-color: #FF5E45;
 }
 
-.content .shop .items li .heart {
+.shop_content .shop .items li .heart {
     color: #fff;
     position: absolute;
     top:9px;
@@ -462,7 +462,7 @@ header .banner .item p {
     font-size: 26px;
 }
 
-.content .shop .items li .red_heart {
+.shop_content .shop .items li .red_heart {
     color: red;
     font-weight: 800;
     transition: all 0.5s;
@@ -470,7 +470,7 @@ header .banner .item p {
 
     /*促銷裝飾*/
 
-.content .shop .items li .pro_text {
+.shop_content .shop .items li .pro_text {
     font-size: 16px;
     background-color: #00CC99;
     width: 120px;
@@ -486,7 +486,7 @@ header .banner .item p {
     z-index: 2;
 }
 
-.content .shop .items li .decoration {
+.shop_content .shop .items li .decoration {
     background-color: #008563;
     width: 120px;
     height: 10px;
@@ -496,30 +496,30 @@ header .banner .item p {
     right: -21px;
 }
 @media (max-width:950px) {
-    .content .shop .items li {
+    .shop_content .shop .items li {
         line-height: 1.0;
     }
-    .content .shop .items li h2 {
+    .shop_content .shop .items li h2 {
         padding-top: 10px;
     }
 }
 @media (max-width:768px) {
-    .content .shop .items li {
+    .shop_content .shop .items li {
         width: 48%;
         margin-right: 2%;
     
     }
-    .content .shop .items li .add_btn {
+    .shop_content .shop .items li .add_btn {
         height: 40px;
         line-height: 40px;
         padding: 0;
     }
-    .content .shop .items li .heart {
+    .shop_content .shop .items li .heart {
         font-size: 44px;
     }
 }
 @media (max-width:414px) {
-    .content .shop .items li {
+    .shop_content .shop .items li {
         width: 100%;
         margin-right: 0;
         padding-bottom: 0;

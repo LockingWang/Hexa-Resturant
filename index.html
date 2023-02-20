@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <link rel="stylesheet" href="css/headpage.css">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="https://kit.fontawesome.com/847854956a.js" crossorigin="anonymous"></script>
     <script src="js/headpage.js"></script>
 </head>
@@ -34,8 +35,8 @@
                         <div class="bar3"></div>
                     </div>
                     <ul class="navbar">
-                        <li><a href="shop.html">線上購物</a></li>
-                        <li><a href="login.html">會員中心</a></li>
+                        <li><a href="#">線上購物</a></li>
+                        <li><a href="#">會員中心</a></li>
                         <li><a href="#firstPart">特色</a></li>
                         <li><a href="#secondPart">主廚</a></li>
                         <li><a href="#fourthPart">地圖</a></li>
@@ -52,109 +53,111 @@
                 </div>
             </div>
         </header>
-        <div class="content">
-            <div class="firstPart" id="firstPart">
-                <div class="headWord">
-                    <div class="baseLine"></div>
-                    <div class="words-between">
-                        <h2>客人總是在詢問<br/>這麼好吃的秘訣是什麼</h2>
+        <div class="content" id="content">
+            <div class="head_content">
+                <div class="firstPart" id="firstPart">
+                    <div class="headWord">
+                        <div class="baseLine"></div>
+                        <div class="words-between">
+                            <h2>客人總是在詢問<br/>這麼好吃的秘訣是什麼</h2>
+                        </div>
+                        <div class="baseLine"></div>
                     </div>
-                    <div class="baseLine"></div>
+                    <ul class="keys">
+                        <li>
+                            <img src="images/feature_1.png" alt="onion picture">
+                            <h2>台灣本土蔬菜</h2>
+                            <p>
+                                In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/feature_2.png" alt="chef picture">
+                            <h2>專業米其林廚師</h2>
+                            <p>
+                                Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/feature_3.png" alt="kitchen picture">
+                            <h2>對於專業不能退讓</h2>
+                            <p>
+                                Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.
+                            </p>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="keys">
-                    <li>
-                        <img src="images/feature_1.png" alt="onion picture">
-                        <h2>台灣本土蔬菜</h2>
-                        <p>
-                            In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.
+                <div class="secondPart" id="secondPart">
+                    <img src="images/main_chef_brown.png" alt="main_chef picture">
+                    <div class="text">
+                        <h2>今日主廚：帕金森、梅在帕</h2>
+                        <p>Tody Chef: Plum in Shock</p>
+                        <p class="chef_story">
+                            Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.
                         </p>
-                    </li>
-                    <li>
-                        <img src="images/feature_2.png" alt="chef picture">
-                        <h2>專業米其林廚師</h2>
-                        <p>
-                            Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.
-                        </p>
-                    </li>
-                    <li>
-                        <img src="images/feature_3.png" alt="kitchen picture">
-                        <h2>對於專業不能退讓</h2>
-                        <p>
-                            Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="secondPart" id="secondPart">
-                <img src="images/main_chef_brown.png" alt="main_chef picture">
-                <div class="text">
-                    <h2>今日主廚：帕金森、梅在帕</h2>
-                    <p>Tody Chef: Plum in Shock</p>
-                    <p class="chef_story">
-                        Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.
-                    </p>
+                    </div>
                 </div>
-            </div>
-            <div class="thirdPart" id="thirdPart">
-                <h2>聽聽別人的感想</h2>
-                <ul class="comments">
-                    <li>
-                        <img src="images/avatar_1.png" alt="consumer_picture">
-                        <div class="commentText">
-                            <h3>高雄一口吃</h3>
-                            <p>
-                                自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
-                            </p>
-                            <p class="occupation"> -- 產品經理</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/avatar_2.png" alt="consumer_picture">
-                        <div class="commentText">
-                            <h3>廟口小霸王</h3>
-                            <p>
-                                自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
-                            </p>
-                            <p class="occupation"> -- 金身道士</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/avatar_3.png" alt="consumer_picture">
-                        <div class="commentText">
-                            <h3>春天也來了</h3>
-                            <p>
-                                自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
-                            </p>
-                            <p  class="occupation"> -- 美麗萬分</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="fourthPart" id="fourthPart">
-                <h2>我們的位置不太夠坐<br/>要不要先訂位呢？</h2>
-                <div class="booking">
-                    <img src="images/Map.png" alt="map">
-                    <form class="pure-form pure-form-stacked" action="#">
-                        <fieldset>
-                            <label for="booking-name">姓名</label>
-                            <input type="text" id="booking-name" placeholder="六角講師吃尾牙" />
-                            <label for="booking-phoneNumber">電話</label>
-                            <input type="text" id="booking-phoneNumber" placeholder="02-1234567" />
-                            <label for="booking-email">Email</label>
-                            <input type="email" id="booking-email" placeholder="test@gmail.com" />
-                            <label for="booking-number">人數</label>
-                            <input type="number" id="booking-number" />
-                            
-                            <label for="has-vegetarian" class="pure-checkbox">是否需要素食</label>
-                            <label class="choice">是<input type="radio" id="has-vegetarian" name="has-vegetarian" class="has-vegetarian" value="yes" /></label>
-                            <label class="choice">否<input type="radio" id="has-vegetarian" name="has-vegetarian" class="has-vegetarian" value="no" /></label>
-                            
-                            <div class="btnGroup">
-                                <button class="pure-button pure-button-primary cancel-btn">取消</button>
-                                <button class="pure-button pure-button-primary submit-btn" type="submit" >送出</button>
+                <div class="thirdPart" id="thirdPart">
+                    <h2>聽聽別人的感想</h2>
+                    <ul class="comments">
+                        <li>
+                            <img src="images/avatar_1.png" alt="consumer_picture">
+                            <div class="commentText">
+                                <h3>高雄一口吃</h3>
+                                <p>
+                                    自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+                                </p>
+                                <p class="occupation"> -- 產品經理</p>
                             </div>
-                        </fieldset>
-                    </form>
+                        </li>
+                        <li>
+                            <img src="images/avatar_2.png" alt="consumer_picture">
+                            <div class="commentText">
+                                <h3>廟口小霸王</h3>
+                                <p>
+                                    自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+                                </p>
+                                <p class="occupation"> -- 金身道士</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/avatar_3.png" alt="consumer_picture">
+                            <div class="commentText">
+                                <h3>春天也來了</h3>
+                                <p>
+                                    自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+                                </p>
+                                <p  class="occupation"> -- 美麗萬分</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fourthPart" id="fourthPart">
+                    <h2>我們的位置不太夠坐<br/>要不要先訂位呢？</h2>
+                    <div class="booking">
+                        <img src="images/Map.png" alt="map">
+                        <form class="pure-form pure-form-stacked" action="#">
+                            <fieldset>
+                                <label for="booking-name">姓名</label>
+                                <input type="text" id="booking-name" placeholder="六角講師吃尾牙" />
+                                <label for="booking-phoneNumber">電話</label>
+                                <input type="text" id="booking-phoneNumber" placeholder="02-1234567" />
+                                <label for="booking-email">Email</label>
+                                <input type="email" id="booking-email" placeholder="test@gmail.com" />
+                                <label for="booking-number">人數</label>
+                                <input type="number" id="booking-number" />
+                                
+                                <label for="has-vegetarian" class="pure-checkbox">是否需要素食</label>
+                                <label class="choice">是<input type="radio" id="has-vegetarian" name="has-vegetarian" class="has-vegetarian" value="yes" /></label>
+                                <label class="choice">否<input type="radio" id="has-vegetarian" name="has-vegetarian" class="has-vegetarian" value="no" /></label>
+                                
+                                <div class="btnGroup">
+                                    <button class="pure-button pure-button-primary cancel-btn">取消</button>
+                                    <button class="pure-button pure-button-primary submit-btn" type="submit" >送出</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
