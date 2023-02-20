@@ -18,10 +18,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <link rel="stylesheet" href="css/headpage.css">
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="https://kit.fontawesome.com/847854956a.js" crossorigin="anonymous"></script>
-    <script src="js/headpage.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -35,8 +33,8 @@
                         <div class="bar3"></div>
                     </div>
                     <ul class="navbar">
-                        <li><a href="#">線上購物</a></li>
-                        <li><a href="#">會員中心</a></li>
+                        <li><a class="shop_link" href="#">線上購物</a></li>
+                        <li><a class="member_link" href="#">會員中心</a></li>
                         <li><a href="#firstPart">特色</a></li>
                         <li><a href="#secondPart">主廚</a></li>
                         <li><a href="#fourthPart">地圖</a></li>
@@ -53,7 +51,7 @@
                 </div>
             </div>
         </header>
-        <div class="content" id="content">
+        <div class="content">
             <div class="head_content">
                 <div class="firstPart" id="firstPart">
                     <div class="headWord">
@@ -138,13 +136,13 @@
                         <img src="images/Map.png" alt="map">
                         <form class="pure-form pure-form-stacked" action="#">
                             <fieldset>
-                                <label for="booking-name">姓名</label>
+                                <label for="booking-name">姓名*</label>
                                 <input type="text" id="booking-name" placeholder="六角講師吃尾牙" />
-                                <label for="booking-phoneNumber">電話</label>
+                                <label for="booking-phoneNumber">電話*</label>
                                 <input type="text" id="booking-phoneNumber" placeholder="02-1234567" />
                                 <label for="booking-email">Email</label>
                                 <input type="email" id="booking-email" placeholder="test@gmail.com" />
-                                <label for="booking-number">人數</label>
+                                <label for="booking-number">人數*</label>
                                 <input type="number" id="booking-number" />
                                 
                                 <label for="has-vegetarian" class="pure-checkbox">是否需要素食</label>
@@ -188,5 +186,7 @@
             </ul>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="js/headpage.js"></script>
 </body>
 </html>
