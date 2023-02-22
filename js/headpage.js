@@ -242,6 +242,13 @@ function checkPage(){
 
 $(document).ready(function () {
     // header 功能區
+    $('.scrollTop').click(function(e){
+        e.preventDefault();
+        const target = $(this).attr('href');
+        const targetPos = $(target).offset().top;
+        $('html, body').animate({scrollTop: targetPos}, 1000);
+      });
+    
     $('.mobile-menuBTN').click(function (e) { 
         e.preventDefault();
         $(this).toggleClass('change');
